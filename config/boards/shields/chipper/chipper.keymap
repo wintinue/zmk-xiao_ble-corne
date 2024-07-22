@@ -61,13 +61,13 @@
                 DEF_layer {
                         bindings = <
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-   &kp ESC    &kp Q         &kp W         &kp E         &kp R         &kp T                    &kp Y         &kp U         &kp I         &kp O         &kp P         &kp BSPC
+&mt LC(LA(LSHFT)) ESC  &kp Q    &kp W     &kp E         &kp R         &kp T                    &kp Y         &kp U         &kp I         &kp O         &kp P         &kp BSPC
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-   &kp TAB    &kp A         &kp S         &kp D         &kp F         &kp G                    &kp H         &kp J         &kp K         &kp L         &kp DEL      &kp RSHFT
+   &kp TAB    &mt LG(A) A   &kp S         &kp D         &kp F         &kp G                    &kp H         &kp J         &kp K         &kp L         &kp DEL      &kp RSHFT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-   &kp LALT   &kp Z         &kp X         &kp C         &kp V         &kp B                    &kp N         &kp M         &kp COMMA     &kp DOT       &kp LEFT      &kp RIGHT
+   &kp LCTRL  &kp Z         &mt LG(X) X   &mt LG(C) C   &mt LG(V) V   &mt LC(LA(LS(V))) B      &kp N         &kp M         &kp COMMA     &kp DOT       &kp LEFT      &kp RIGHT
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-                                          &kp LCTRL     &lt FN SPC    &kp LGUI                &lt NAV SPC    &kp SEMI      &kp RET 
+                                          &kp LSHFT     &kp LGUI      &lt NAV SPC              &lt NUM SPC   &kp BSPC      &kp RET 
 //                                     ╰────────────┼──────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────┼─────────────╯
                         >;
                 };
