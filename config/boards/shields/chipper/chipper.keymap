@@ -7,7 +7,7 @@
 #define X_LT  &mt LS(LC(LALT)) ESC
 #define X_LM  &kp TAB
 #define X_LB  &kp LCTRL
-#define X_RT  &mt RS(RC(RA(RGUI))) DEL
+#define X_RT  &kp DEL
 #define X_RM  &kp RSHFT
 #define X_RB  &kp RALT
 
@@ -39,7 +39,7 @@
         compatible = "zmk,combos";
 	 combo_cw {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <6 30>;aaa
+            key-positions = <6 30>;
             bindings = <&nayeon>;
         };
     };
