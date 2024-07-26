@@ -5,11 +5,11 @@
 
 /* map 6 extra keys */
 #define X_LT  &mt LS(LC(LALT)) ESC
-#define X_LM  &mt RS(RC(RA(RGUI))) TAB
-#define X_LB  &kp GLOBE
+#define X_LM  &kp TAB
+#define X_LB  &kp LCTRL
 #define X_RT  &mt RS(RC(RA(RGUI))) DEL
-#define X_RM  &kp RALT
-#define X_RB  &kp RCTRL
+#define X_RM  &kp RSHFT
+#define X_RB  &kp RALT
 
 #define XXX &none
 #define ___ &trans
@@ -39,7 +39,7 @@
         compatible = "zmk,combos";
 	 combo_cw {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <6 30>;
+            key-positions = <6 30>;aaa
             bindings = <&nayeon>;
         };
     };
