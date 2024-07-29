@@ -37,7 +37,7 @@
     };
 };
 
-behaviors {
+/ {
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
