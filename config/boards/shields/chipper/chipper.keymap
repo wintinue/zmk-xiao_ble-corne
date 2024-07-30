@@ -38,13 +38,14 @@
 };
 
 / {
-        bhm: balanced_homerow_mods {
+        bht: balanced_hold_taps {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
-            quick-tap-ms = <0>;
+            tapping-term-ms = <280>;    // <---[[moderate duration]]
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
+            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            require-prior-idle-ms = <150>;
         };
     };
 / {
@@ -64,11 +65,11 @@
                 DEF_layer {
                         bindings = <
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-&bhm LS(LC(LALT)) ESC     &kp Q         &kp W         &kp E    &kp R  &kp T             &kp Y         &kp U         &kp I         &kp O         &lt FN P        &kp DEL
+&bht LS(LC(LALT)) ESC     &kp Q         &kp W         &kp E    &kp R  &kp T             &kp Y         &kp U         &kp I         &kp O         &lt FN P        &kp DEL
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-&kp TAB     &bhm LG(A) A   &kp S         &kp D         &bhm LG(F) F   &kp G             &kp H         &kp J         &kp K         &kp L         &kp RET          &kp RSHFT
+&kp TAB     &bht LG(A) A   &kp S         &kp D         &bht LG(F) F   &kp G             &kp H         &kp J         &kp K         &kp L         &kp RET          &kp RSHFT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-&kp LCTRL     &kp Z    &bhm LG(X) X   &bhm LG(C) C   &bhm LG(V) V   &bhm LS(LC(LA(V))) B   &kp N        &kp M        &bhm SEMI COMMA &bhm COLON DOT &bhm EXCL QMARK  &kp RALT
+&kp LCTRL   &kp Z    &bht LG(X) X   &bht LG(C) C   &bht LG(V) V   &bht LS(LC(LA(V))) B  &kp N      &kp M        &bht SEMI COMMA &bht COLON DOT &bht EXCL QMARK  &kp RALT
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
                                          &kp LSHFT     &sk LGUI      &lt NAV SPC       &lt NUM SPC   &kp BSPC      &kp RS(RC(RA(H)))
 //                                     ╰────────────┼──────────────┴─────────────╯   ╰─────────────┴─────────────┼─────────────╯
