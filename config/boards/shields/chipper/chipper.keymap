@@ -8,11 +8,11 @@
 
 #define COMBO_TIMEOUT 60
 
-#define DEF 0
+#define DEF 4
 #define NAV 1
 #define FN 2
 #define NUM 3
-#define SYS 4
+#define SYS 0
 
 / {
     macros {
@@ -76,6 +76,8 @@
              //                                     ╰────────────┼──────────────┴─────────────╯   ╰─────────────┴─────────────┼─────────────╯
                         >;
                 };
+
+                
 
                 NAV_layer {
                         display-name = "Navigation";
