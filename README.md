@@ -20,8 +20,8 @@ This repository contains a customized **[ZMK firmware](https://zmk.dev/docs)** f
 - Using GUI
   - [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
 - Edit code
-  - Edit [`config/chipper.conf`](https://github.com/wintinue/zmk-xiao_ble-corne/blob/custom/config/chipper.conf) to set your own keyboard
-  - Edit [`config/chipper.keymap`](https://github.com/wintinue/zmk-xiao_ble-corne/blob/custom/config/chipper.keymap) to set your own keymap
+  - Edit [`config/chipper.conf`](https://github.com/wintinue/zmk-corne/blob/custom/config/chipper.conf) to set your own keyboard
+  - Edit [`config/chipper.keymap`](https://github.com/wintinue/zmk-corne/blob/custom/config/chipper.keymap) to set your own keymap
 
 ### **3️⃣ Build Firmware**
 1. Click `Action` tab of your repository page.
